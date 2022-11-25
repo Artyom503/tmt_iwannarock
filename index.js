@@ -13,4 +13,4 @@ bot.on(/^\/say (.+)$/, (msg, props) => {
     return bot.sendMessage(msg.from.id, text, { replyToMessage: msg.message_id });
 });
 bot.start();
-server.listen(process.env.PORT);
+bot.listen(process.env.PORT);
