@@ -12,5 +12,4 @@ bot.on(/^\/say (.+)$/, (msg, props) => {
     const text = props.match[1];
     return bot.sendMessage(msg.from.id, text, { replyToMessage: msg.message_id });
 });
-bot.start();
-bot.listen(process.env.PORT);
+bot.connect();
